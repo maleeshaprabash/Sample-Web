@@ -11,11 +11,11 @@ function FrontPage () {
     ];
 
     return(
-        <div className="relative h-screen w-full z-10">
+        <div className="relative md:h-screen w-full z-10">
             <div>
                 <NavBar />
             </div>
-            <div className=' overflow-hidden h-150'>
+            <div className=' overflow-hidden md:h-150 h-50'>
                 <img 
                     src={image01} 
                     alt='image01'

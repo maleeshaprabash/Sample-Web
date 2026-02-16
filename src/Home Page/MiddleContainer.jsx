@@ -41,16 +41,16 @@ function MiddleContainer() {
         ];
 
     return (
-        <div className='top-10 relative'>
-            <div className='flex text-[28px] justify-center items-center uppercase font-bold font-SNPro tracking-wider'>
+        <div className='py-10 relative bg-blue-800'>
+            <div className='flex text-[min(4vw,28px)] justify-center items-center uppercase font-bold font-SNPro tracking-wider'>
                 <div className='absolute h-0.5 bg-black w-full'></div>
                 <p className='h-10 w-100 bg-white z-10 items-center text-center'>New Arivals</p>
             </div>
             
-            <div className="flex relative h-80 w-full justify-center items-center top-5">
-                <div className='flex justify-cente gap-10'>
+            <div className="flex relative md:h-80 w-full justify-center items-center top-5">
+                <div className='flex justify-cente md:gap-10 gap-4'>
                     {images.map((img) =>(
-                        <div className='w-44 h-64 overflow-hidden rounded-full hover:scale-105 transition-all duration-200 shadow-md shadow-black/50'>
+                        <div className='w-[min(13vw,176px)] h-[min(16vw,256px)]  overflow-hidden rounded-full hover:scale-105 transition-all duration-400 shadow-md shadow-black/50'>
                             <img 
                             src={img.image}
                             alt={`image-${img.id}`}
